@@ -1,10 +1,16 @@
-alert('Hello world');
 
-let myName = 'Kadir';
-document.write(myName);
-
-let pokemonList= [{
-  name: "Pickachu", type: "electro", height: "50"};
-  {name: "Bisasam", type:"grass", height:"70"},
-    {name: "Glumanda", type: "fire", height:"80"}
+let pokemonList= [
+  {name: "Balbusaur", type:"grass", height:"0.7"},
+  {name: "Charizard", type:"fire", height:"1.7"},
+  {name: "Squirtle", type:"water", height:"1"}
 ]
+
+for (let i=0; i < pokemonList.length; i++){
+  if (pokemonList[i].height <1.5 && pokemonList[i].height >1{
+    console.log(pokemonList[i].name + "this is a normal Pokemon");
+  }else if (pokemonList[i].height <1){
+    console.log(pokemonList[i].name + "this is a small Pokemon");
+  }else {
+    console.log(pokemonList[i].name + "Wow! It is a big Pokemon");
+  }
+}
