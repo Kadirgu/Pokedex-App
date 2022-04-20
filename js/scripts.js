@@ -1,3 +1,5 @@
+alert("hello world!");
+
 
 let pokemonList= [
   {name: "Balbusaur", type:"grass", height:"0.7"},
@@ -14,3 +16,6 @@ for (let i=0; i < pokemonList.length; i++){
     console.log(pokemonList[i].name + "Wow! It is a big Pokemon");
   }
 }
+
+let simpleAddition = 2 + 2;
+document.write(simpleAddition);
