@@ -6,7 +6,7 @@ let pokemonList= [
 ]
 
 for (let i=0; i < pokemonList.length; i++){
-  if (pokemonList[i].height <1.5 && pokemonList[i].height >1{
+  if (pokemonList[i].height <1.5 && pokemonList[i].height >1){
     console.log(pokemonList[i].name + "this is a normal Pokemon");
   }else if (pokemonList[i].height <1){
     console.log(pokemonList[i].name + "this is a small Pokemon");
