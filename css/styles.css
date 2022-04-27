@@ -1,34 +1,25 @@
+
 .button-class {
-  background-color: #4caf50; /* Green */
+  background-color: #680c1b; /* Green */
   border: none;
-  color: white;
+  color: green;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display:inline-block;
   font-size: 16px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #4caf50;
-}
-* {
-	box-sizing: border-box;
+  background-color: grey;
+  color: yellow;
+  border: 2px solid #ffffff;
 }
 
-html,
-body {
-  font-family: Arial, sans-serif;
-}
 
+/* Modal starts here */
 #modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -50,13 +41,14 @@ body {
 }
 
 .modal {
-  margin: auto;
   display: inline-block;
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
-  width: 100%;
-  max-width: 700px;
+  width: 300%;
+  height: 400px;
+  margin-top: 10%;
+  margin-left: 10%;
   text-align: left;
 }
 
@@ -75,4 +67,22 @@ body {
 
 .modal p {
   margin-bottom: 0;
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  /* CSS for modal container - add your own desired CSS styles here */
+  display: block;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  flex: 0 1 20%;
 }
