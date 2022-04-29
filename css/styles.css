@@ -1,4 +1,14 @@
 
+body {
+  font-family: Monospace;
+  font-size: 14pt;
+}
+blockquote {
+  font-family: Arial;
+  background-color: #F8EFBE;
+  border-left-color: #F4B514;
+}
+
 .button-class {
   background-color: #680c1b; /* Green */
   border: none;
@@ -186,4 +196,43 @@ li {
   height: 60%;
   width: 60%;
   margin: 20%;
+}
+
+#navbar {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.top-nav {
+  background-color: #671100;
+}
+
+.top-nav a {
+  color: #d3e316;
+}
+
+h1.headingStatement {
+  font-family: Monospace;
+  font-size: 2em;
+}
+
+
+/* bootstrap override */
+
+a.btn-primary:hover {
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+    background-color: #FF0000;
+    border-radius: 10px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
 }
