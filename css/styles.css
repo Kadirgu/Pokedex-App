@@ -12,9 +12,9 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: grey;
-  color: yellow;
-  border: 2px solid #ffffff;
+  background-color: lightgrey;
+  color: grey;
+  border: 2px solid #pink;
 }
 
 
@@ -85,4 +85,105 @@ ul {
 li {
   list-style: none;
   flex: 0 1 20%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(219, 218, 218);
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--font-weight-default);
+  font-size: 16px;
+  margin: 0%;
+  line-height: 1.25;
+}
+
+.page-container {
+  margin-top: 20px;
+}
+
+.pokemon-list-item {
+  text-transform: capitalize;
+}
+
+/* pokemob button styles */
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+.btn {
+  margin: 2px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.btn-light {
+  width: 100%;
+  height: 100%
+}
+
+
+/*modal styles*/
+.hidden {
+  display: none;
+}
+
+.modal-header {
+  text-transform: capitalize;
+}
+
+.modal-body {
+  padding-top: 0;
+}
+
+.modal-title {
+  margin-right: -46px;
+}
+
+.type-container {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.pokemon-type-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.modal-pokemon-image {
+  height: 150px;
+  width: 150px;
+}
+
+.pokemon-stats p {
+  margin: 0;
+}
+
+.icon-wrapper {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.type-name {
+  margin: 0;
+}
+
+.type-svg {
+  height: 60%;
+  width: 60%;
+  margin: 20%;
 }

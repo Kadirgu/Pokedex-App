@@ -71,4 +71,3 @@ let pokemonRepository = (function () {
 
 
   pokemonRepository.main();
-  
