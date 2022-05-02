@@ -12,6 +12,16 @@ let pokemonRepository = (() => {
     return pokemonList;
   }
 
+  function addSingle(item) {
+      if (validate(item)) {
+        items.push(item);
+      } else {
+        /* eslint-disable no-console */
+        console.error('Error when validating item', item);
+        /* eslint-enable no-console */
+      }
+    }
+
   // function to add a single item to the pokemonList array
   function add(pokemon) {
     // check type of for object and if all keys exist
