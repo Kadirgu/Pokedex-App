@@ -1,238 +1,83 @@
-
-body {
-  font-family: Monospace;
-  font-size: 14pt;
-}
-blockquote {
-  font-family: Arial;
-  background-color: #F8EFBE;
-  border-left-color: #F4B514;
-}
-
-.button-class {
-  background-color: #680c1b; /* Green */
-  border: none;
-  color: green;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display:inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: lightgrey;
-  color: grey;
-  border: 2px solid #pink;
-}
-
-
-/* Modal starts here */
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
-
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 300%;
-  height: 400px;
-  margin-top: 10%;
-  margin-left: 10%;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  /* CSS for modal container - add your own desired CSS styles here */
-  display: block;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-li {
-  list-style: none;
-  flex: 0 1 20%;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
+:root {
+  --primary-color: rgb(117, 187, 42);
+  --secondary-color: rgb(255 203 5);
+  --tertiary-color: rgb(211 231 248);
 }
 
 body {
-  background-color: rgb(219, 218, 218);
-  font-family: 'Poppins', sans-serif;
-  font-weight: var(--font-weight-default);
-  font-size: 16px;
-  margin: 0%;
-  line-height: 1.25;
+  padding-top: 100px;
 }
 
-.page-container {
-  margin-top: 20px;
+.navbar {
+  background-color: var(--primary-color);
 }
 
-.pokemon-list-item {
-  text-transform: capitalize;
+h1 {
+  color: var(--secondary-color);
+  font-family: 'Pokemon Solid', 'Permanent Marker', sans-serif;
+  letter-spacing: 6px;
+  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
 }
 
-/* pokemob button styles */
-li {
-  list-style: none;
-  padding: 5px;
-}
-
-.btn {
-  margin: 2px;
+.button-pokemon {
   border-radius: 10px;
-  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
-.btn-light {
-  width: 100%;
-  height: 100%
+.button-pokemon:hover {
+  background-color: var(--primary-color);
 }
 
+.modal-image {
+  max-height: 300px;
+}
 
-/*modal styles*/
-.hidden {
+.btn-warning {
+  background-color: var(--secondary-color);
+}
+
+#input-container {
+  display: inline-block;
+}
+
+#autocomplete {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: inherit;
+  height: auto;
+  padding: 12px;
+  width: 207px;
   display: none;
+  position: absolute;
+  z-index: 100;
 }
 
-.modal-header {
-  text-transform: capitalize;
-}
-
-.modal-body {
-  padding-top: 0;
-}
-
-.modal-title {
-  margin-right: -46px;
-}
-
-.type-container {
-  display: flex;
-  align-items: center;
-  width: 100px;
-  gap: 5px;
-  margin-bottom: 5px;
-}
-
-.pokemon-type-flex {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-.modal-pokemon-image {
-  height: 150px;
-  width: 150px;
-}
-
-.pokemon-stats p {
+.suggestions {
+  border-bottom: 1px solid #000;
+  cursor: pointer;
   margin: 0;
+  padding: 3px 0;
 }
 
-.icon-wrapper {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
+.suggestions:last-child {
+  border: none;
 }
 
-.type-name {
-  margin: 0;
+.suggestions:hover {
+  background-color: var(--tertiary-color);
 }
 
-.type-svg {
-  height: 60%;
-  width: 60%;
-  margin: 20%;
+@media screen and (max-width: 605px) {
+  body {
+    padding-top: 130px;
+  }
 }
 
-#navbar {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-.top-nav {
-  background-color: #671100;
-}
-
-.top-nav a {
-  color: #d3e316;
-}
-
-h1.headingStatement {
-  font-family: Monospace;
-  font-size: 2em;
-}
-
-
-/* bootstrap override */
-
-a.btn-primary:hover {
-  text-decoration: none;
-}
-
-.navbar-nav li a:hover {
-    background-color: #FF0000;
-    border-radius: 10px;
-}
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #cccccc;
-  border-radius: 1px;
+@media screen and (max-width: 452px) {
+  body {
+    padding-top: 180px;
+  }
 }
