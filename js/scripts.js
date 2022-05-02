@@ -14,7 +14,7 @@ let pokemonRepository = (() => {
 
   // function to add a single item to the pokemonList array
   function add(pokemon) {
-    // check typeof for object and if all keys exist
+    // check type of for object and if all keys exist
     if (
       typeof pokemon === 'object' &&
       'name' in pokemon &&

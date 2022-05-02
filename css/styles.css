@@ -14,9 +14,9 @@ body {
 
 h1 {
   color: var(--secondary-color);
-  font-family: 'Pokemon Solid', 'Permanent Marker', sans-serif;
-  letter-spacing: 6px;
-  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 .button-pokemon {
@@ -30,7 +30,7 @@ h1 {
 }
 
 .modal-image {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .btn-warning {
