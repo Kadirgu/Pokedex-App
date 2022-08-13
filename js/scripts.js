@@ -18,8 +18,6 @@ let pokemonRepository = (() => {
   function getAll() {
     return pokemonList;
   }
-
-<<<<<<< Updated upstream
   function addSingle(item) {
       if (validate(item)) {
         items.push(item);
@@ -29,15 +27,13 @@ let pokemonRepository = (() => {
         /* eslint-enable no-console */
       }
     }
-
-  // function to add a single item to the pokemonList array
-=======
-/**
+    
+ /*
    * Adds new pokemon to the list and validates the input
    * @param {object} pokemon - name and details of pokemon
    * @memberof pokemonRepository
    */
->>>>>>> Stashed changes
+
   function add(pokemon) {
     // check type of for object and if all keys exist
     if (
